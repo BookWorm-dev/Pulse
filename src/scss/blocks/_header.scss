@@ -17,6 +17,18 @@
     width: 25rem;
     height: 4.5rem;
 
+    @include bp($point_6) {
+        width: 15rem;
+        height: 2.5rem;
+    }
+
+    @include bp($point_7) {
+        width: 12rem;
+        height: 2.5rem;
+    }
+
+
+
     .header__img {
         display: block;
         width: 100%;
@@ -33,11 +45,26 @@
     line-height: 1.2rem;
     color: $color_white;
 
+    @include bp($point_6) {
+        font-size: 0.9rem;
+    }
+
+    @include bp($point_7) {
+        display: none;
+    }
+
+
+
     .header__official__span {
         padding-top: 0.7rem;
         font-size: 1.8rem;
         line-height: 2.8rem;
         color: $color_white;
+
+        @include bp($point_6) {
+            font-size: 1.2rem;
+        }
+
     }
 }
 
@@ -53,5 +80,10 @@
         text-decoration: none;
         color: $color_white;
         padding-bottom: 4px;
+
+        @include bp($point_6) {
+            font-size: 1.2rem;
+            text-align: right;
+        }
     }
 }

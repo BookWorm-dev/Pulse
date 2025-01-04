@@ -33,7 +33,15 @@
 	font-size: 1.2rem;
 	font-weight: 500;
 	border-radius: 0.5rem;
-	text-transform: uppercase
+	text-transform: uppercase;
+
+	@media(max-width: 576px) {
+		min-width: 8rem;
+		height: 3.2rem;
+		padding: 1rem 2rem;
+		line-height: 2.2rem;
+		font-size: 1.2rem;
+	}
 }
 
 %btn_size_2 {
@@ -43,7 +51,16 @@
 	line-height: 2.5rem;
 	font-size: 1.6rem;
 	border-radius: 0.5rem;
-	text-transform: uppercase
+
+	text-transform: uppercase;
+
+	@media(max-width: 576px) {
+		min-width: 15rem;
+		height: 4rem;
+		padding: 1rem 2rem;
+		line-height: 2.2rem;
+		font-size: 1.2rem;
+	}
 }
 
 .btn__header {
