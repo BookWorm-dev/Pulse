@@ -63,6 +63,43 @@
 	}
 }
 
+%btn_size_3 {
+	max-width: 30.3rem;
+	height: 5.8rem;
+	padding: 1.7rem 2.9rem;
+	line-height: 2.5rem;
+	font-size: 1.6rem;
+	border-radius: 0.5rem;
+
+	text-transform: uppercase;
+
+	@media(max-width: 576px) {
+		min-width: 15rem;
+		height: 4rem;
+		padding: 1rem 2rem;
+		line-height: 2.2rem;
+		font-size: 1.2rem;
+	}
+}
+
+%btn_size_4 {
+	min-width: 13.5rem;
+	height: 4.4rem;
+	padding: 1rem 2.4rem;
+	line-height: 2.2rem;
+	font-size: 1.4rem;
+	border-radius: 0.5rem;
+	text-transform: uppercase;
+
+	@media(max-width: 576px) {
+		min-width: 8rem;
+		height: 3.5rem;
+		padding: 1rem 2rem;
+		line-height: 1.1rem;
+		font-size: 0.8rem;
+	}
+}
+
 .btn__header {
 	@extend %prime_btn;
 	@extend %btn_size_1;
@@ -71,4 +108,14 @@
 .bth__base {
 	@extend %prime_btn;
 	@extend %btn_size_2;
+}
+
+.bth__form {
+	@extend %prime_btn;
+	@extend %btn_size_3;
+}
+
+.bth-content__catalog {
+	@extend %prime_btn;
+	@extend %btn_size_4;
 }

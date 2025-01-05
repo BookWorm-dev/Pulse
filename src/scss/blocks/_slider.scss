@@ -1,0 +1,26 @@
+@use './helpers/abstracts' as *;
+
+.slider__inner {
+    position: relative;
+    margin: 0 auto;
+    max-width: 75rem;
+    height: 52.7rem;
+}
+
+.slick-prev {
+    position: absolute;
+    top: 50%;
+    left: -6.6rem;
+    transform: translateY(-50%);
+    width: 31px;
+    height: 50px;
+}
+
+.slick-next {
+    position: absolute;
+    top: 50%;
+    right: -6.6rem;
+    transform: translateX(-50%);
+    width: 31px;
+    height: 50px;
+}
