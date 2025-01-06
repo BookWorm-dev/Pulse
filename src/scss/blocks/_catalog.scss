@@ -41,13 +41,19 @@
 }
 
 .catalog-content {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 1.7rem 1.9rem;
 
+    &_active {
+        display: flex;
+    }
+
     &__item {
+        overflow: hidden;
+
         flex-direction: column;
         align-items: center;
 
@@ -116,12 +122,13 @@
         ::after {
             position: absolute;
             content: "";
-            width: 263px;
+            width: 26.3rem;
             height: 2px;
-            top: -17px;
+            top: -1.7rem;
             left: 2px;
             color: black;
             background-color: #E8E8E8;
+
         }
     }
 
@@ -142,6 +149,29 @@
         text-wrap: nowrap;
     }
 
+    &__info {
+        position: relative;
+        font-size: 1.4rem;
+        font-weight: 300;
+        line-height: 2.1rem;
+        color: #555555;
+        margin-bottom: 4px;
+
+
+        :nth-child(4) {
+            margin-bottom: 5rem;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 0.5rem;
+            height: 0.5rem;
+            left: -1.5rem;
+            top: 0.7rem;
+            background-color: $color_red;
+        }
+    }
 
 
 
@@ -153,7 +183,10 @@
 
     .catalog-content__external {
         width: 50%;
+        transform: translateX(100%);
         margin-right: 0px;
+        transition: 0.5s all;
+
 
         &_active {
             transform: translateX(0%);
@@ -164,10 +197,11 @@
     .catalog-content__enternal {
         position: relative;
         width: 50%;
-        margin-left: 20px;
-        padding-right: 20px;
+        margin-left: 2rem;
+        transform: translateX(0%);
+        padding-right: 2rem;
         transition: 0.5s all;
-        padding-left: 19px;
+        padding-left: 0.8rem;
         margin-bottom: 0;
         list-style-type: none;
 
@@ -175,5 +209,21 @@
             transform: translateX(-100%);
             margin-left: 0px;
         }
+    }
+
+    .catalog-content__back {
+        position: absolute;
+        bottom: 42px;
+        left: 50%;
+        transform: translateX(calc(-50% - 8px));
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.4rem;
+        text-decoration-style: solid;
+        text-transform: uppercase;
+        color: $color_red;
+        display: block;
+        margin-top: 7.5rem;
     }
 }
