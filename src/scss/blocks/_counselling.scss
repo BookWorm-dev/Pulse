@@ -8,6 +8,19 @@
     :last-of-type {
         margin-bottom: 1.7rem;
     }
+
+    .error {
+        border: 1px solid $color_red;
+        text-align: center;
+    }
+
+    label.error {
+        margin-bottom: 1.5rem;
+        text-align: left;
+        color: $color_white;
+        border: none;
+
+    }
 }
 
 .input-counselling {
@@ -20,4 +33,5 @@
     font-weight: 400;
     line-height: 6.6rem;
     color: $color_grey_form;
+
 }

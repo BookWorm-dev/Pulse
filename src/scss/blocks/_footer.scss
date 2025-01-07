@@ -1,0 +1,60 @@
+@use './helpers/abstracts' as *;
+
+.footer {
+    position: relative;
+    min-height: 63rem;
+    position: relative;
+}
+
+.footer__info {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    right: 50%;
+    width: 46rem;
+    height: 27rem;
+    background-color: $color_red;
+
+    address {
+        margin-top: 5rem;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 2rem;
+        color: $color_white;
+    }
+
+    .footer__tel {
+        margin-top: 3.6rem;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2rem;
+        color: $color_white;
+        text-decoration: none;
+    }
+
+    .footer__social {
+        display: flex;
+        ;
+        margin-top: 3.6rem;
+        gap: 2.7rem;
+
+        &-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 52px;
+            height: 52px;
+            gap: 0px;
+            border: 2px;
+            opacity: 0px;
+            border: 2px solid #FFFFFF;
+            border-radius: 50%;
+        }
+    }
+
+}
