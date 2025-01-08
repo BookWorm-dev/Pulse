@@ -1,11 +1,30 @@
-@use './helpers/abstracts' as *;
+@use '../helpers/abstracts' as *;
 
 .slider__inner {
     position: relative;
     margin: 0 auto;
     max-width: 75rem;
     height: 52.7rem;
+
+    @include bp($point_6) {
+        max-width: 40rem;
+        height: 35rem;
+    }
+
+
+    .img {
+
+        @include bp($point_7) {
+            max-width: 30rem;
+        }
+
+    }
+
+    .slick-dots {
+        display: none !important;
+    }
 }
+
 
 .slick-prev {
     position: absolute;
@@ -14,6 +33,11 @@
     transform: translateY(-50%);
     width: 31px;
     height: 50px;
+
+    @include bp($point_6) {
+        display: none;
+    }
+
 }
 
 .slick-next {
@@ -23,4 +47,8 @@
     transform: translateX(-50%);
     width: 31px;
     height: 50px;
+
+    @include bp($point_6) {
+        display: none;
+    }
 }

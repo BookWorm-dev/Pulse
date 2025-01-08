@@ -1,9 +1,16 @@
-@use './helpers/abstracts' as *;
+@use '../helpers/abstracts' as *;
 
 .form-counselling {
     display: flex;
     flex-direction: column;
     gap: 1.1rem;
+    
+    @include bp($point_6) {
+        display: flex;
+        justify-content: center;
+    align-items: center;
+    }
+    
 
     :last-of-type {
         margin-bottom: 1.7rem;
@@ -19,6 +26,8 @@
         text-align: left;
         color: $color_white;
         border: none;
+        font-size: 1.5rem;
+
 
     }
 }

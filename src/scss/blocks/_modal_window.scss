@@ -1,4 +1,4 @@
-@use './helpers/abstracts' as *;
+@use '../helpers/abstracts' as *;
 
 .overlay {
     display: none;
@@ -59,6 +59,8 @@
         border: none;
         text-align: center;
         margin-bottom: 1.5rem;
+        color: $color_black;
+        font-size: 1.5rem;
 
     }
 }

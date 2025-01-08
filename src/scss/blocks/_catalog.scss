@@ -1,4 +1,4 @@
-@use './helpers/abstracts' as *;
+@use '../helpers/abstracts' as *;
 
 .catalog__tabs {
     display: flex;
@@ -8,6 +8,10 @@
     margin-top: 4.6rem;
     margin-bottom: 5.7rem;
     gap: 1rem;
+
+    @include bp($point_7) {
+        flex-direction: column;
+    }
 
     .catalog__tab {
         width: 22.2rem;
@@ -23,6 +27,14 @@
         text-wrap: nowrap;
         cursor: pointer;
         transition: 0.5s all;
+
+        @include bp($point_6) {
+            max-width: 15rem;
+            font-size: 1.5rem;
+        }
+
+
+
 
         &:hover {
             box-shadow: 2px 2px 2rem $color_grey_form;
@@ -57,10 +69,16 @@
         flex-direction: column;
         align-items: center;
 
-        width: 303px;
-        min-height: 442px;
-        padding: 20px 26px 21px 26px;
+        width: 30.3rem;
+        min-height: 44.2rem;
+        padding: 2rem 2.6rem 2.1rem 2.6rem;
         border: 2px solid #E8E8E8;
+
+        @include bp($point_7) {
+            width: 25rem;
+            min-height: 44.2rem;
+        }
+
 
     }
 
@@ -116,6 +134,7 @@
     &__footer {
         position: relative;
         display: flex;
+        justify-content: space-between;
         align-items: center;
         gap: 2rem;
 

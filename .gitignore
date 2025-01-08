@@ -5,3 +5,5 @@ app/
 build/
 /build/
 package-lock.json
+src/mailer/smart.php
+

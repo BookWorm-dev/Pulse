@@ -1,4 +1,4 @@
-@use './helpers/abstracts' as *;
+@use '../helpers/abstracts' as *;
 
 .reviews-wrapper {
     display: flex;
@@ -13,6 +13,12 @@
     gap: 6.1rem;
     margin-bottom: 6rem;
 
+    @include bp($point_6) {
+        gap: 4rem;
+        flex-direction: column;
+    }
+
+
     &__img-w {
         width: 16.9rem;
         height: 16.9rem;
@@ -20,6 +26,7 @@
 
     &__img {
         display: block;
+
     }
 
     &__title {
