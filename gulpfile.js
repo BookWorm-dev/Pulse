@@ -1,4 +1,5 @@
 const { src, dest, watch, parallel } = require('gulp');
+const htmlmin = require('gulp-htmlmin');
 
 const sass = require('gulp-dart-sass');
 (fileinclude = require('gulp-file-include')),
@@ -36,7 +37,7 @@ function styles() {
 					overrideBrowserslist: browserslist,
 				}),
 			)
-	
+
 			.pipe(dest(cfg.outputDir + 'css', { sourcemaps: '.' }))
 			.pipe(browserSync.stream({ once: true }))
 	);
